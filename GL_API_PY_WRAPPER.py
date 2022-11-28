@@ -47,5 +47,5 @@ if __name__ == "__main__":
 
     print(get_user("Casper1123").stats.coinsspent)
 
-    # entities.classes.user imports this file, therefore code is run twice.
+    # entities.classes.user imports this file, therefore code is run twice outside of this statement.
     # This is because it needs to import get_user_stats :)
