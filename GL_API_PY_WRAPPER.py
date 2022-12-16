@@ -158,7 +158,7 @@ def get_server_status() -> serverstatus or None:
 def get_user(userID: str or int, steam=False) -> user or None:
     try:
         if not steam:
-            if isinstance(user, int):
+            if isinstance(userID, int):
                 return user(_r.get(f"https://api.galaxylifegame.net/users/get?id={userID}").json())
 
             else:
@@ -175,7 +175,7 @@ def get_user(userID: str or int, steam=False) -> user or None:
 
 def search_user(userID: str or int) -> list[user] or None:
     try:
-        if isinstance(user, int):
+        if isinstance(userID, int):
             return [user(i) for i in _r.get(f"https://api.galaxylifegame.net/users/get?id={userID}").json()]
         else:
             try:
