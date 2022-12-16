@@ -1,5 +1,4 @@
-# Folder name is EntitiesFolder due to python stuff. Dont worry about it.
-
+# Just a linking chain for the folder
 import classes.alliance
 import classes.serverstatus
 import classes.user
