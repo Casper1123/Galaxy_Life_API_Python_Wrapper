@@ -14,7 +14,7 @@ class user:
         self.id = int(json["Id"])
         self.name = json["Name"]
         self.avatar = json["Avatar"]
-        self.online = json["Online"]
+        # self.online = json["Online"] > removed endpoint
         self.experience = json["Experience"]
         self.allianceid = json["AllianceId"]
         self.planets = [planet(i) for i in json["Planets"]]
